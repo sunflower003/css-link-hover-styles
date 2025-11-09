@@ -179,6 +179,12 @@ a:focus-visible {
     transition: transform 0.4s 0.1s cubic-bezier(0.2, 1, 0.8, 1);
 }
 
+.link--thebe:hover::after {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+    transition-timing-function: cubic-bezier(0.7, 0, 0.2, 1);
+}
+
 /* Link 4 */
 .link--leda {
     overflow: hidden;
@@ -558,7 +564,7 @@ a:focus-visible {
     }
 }
 
-.link-mneme::after {
+.link--mneme::after {
     content: '';
     transition: opacity 0.3s;
 }
